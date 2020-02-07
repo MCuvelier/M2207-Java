@@ -19,4 +19,10 @@ public class Client {
 	public String getPrenom() {
 		return prenom;
 	}
+	//Methodes
+	//Exercice3.3
+		
+	void afficherSolde() {
+			System.out.println("Le solde client est " + this.compteCourant.getSolde() + "euro");
+	}
 }

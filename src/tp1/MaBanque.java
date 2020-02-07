@@ -7,6 +7,8 @@ public class MaBanque {
 		Compte compte1;
 		//Exercice 2.6
 		Compte c2;
+		//Exercice 3.4
+		Client client1;
 		
 		//Instanciation
 		
@@ -34,5 +36,9 @@ public class MaBanque {
 		c2.setDecouvert(500); 
 		System.out.println(c2.retrait(700));
 		c2.afficherSolde();
+		
+		//Exercice 3.4
+		client1 = new Client("Sarah","Croche" ,c2);
+		client1.afficherSolde();
 	}
 }
