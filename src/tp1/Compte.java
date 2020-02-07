@@ -45,10 +45,10 @@ public class Compte {
 		 public void depot(double montant) {
 			 solde = montant+solde ;
 		 }
-		 
+		 //Exercice 2.5
 		 String retrait(double montant) {
 			 if((solde+decouvert) < montant) {
-				 return "Desole, retrait refuse." ;
+				 return "Retrait refuse." ;
 			 }else {
 				 solde= solde-montant ;
 				 return "Retrait effectue.";
