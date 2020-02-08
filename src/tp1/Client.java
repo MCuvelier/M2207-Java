@@ -4,7 +4,7 @@ public class Client {
 	//Attributs
 	public String nom, prenom ;
 	private Compte compteCourant;
-	
+
 	//Constructeurs
 	public Client(String n, String p, Compte compte){
 		nom = n; 

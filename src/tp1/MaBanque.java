@@ -9,6 +9,11 @@ public class MaBanque {
 		Compte c2;
 		//Exercice 3.4
 		Client client1;
+		//Exercice 4.1
+		ClientMultiComptes client;
+		//Exercice 4.4
+		Compte compte10, compte20;
+		ClientMultiComptes clientmulti;
 		
 		//Instanciation
 		
@@ -40,5 +45,19 @@ public class MaBanque {
 		//Exercice 3.4
 		client1 = new Client("Sarah","Croche" ,c2);
 		client1.afficherSolde();
+		
+		//Exercice4.1 "tester"
+		client = new ClientMultiComptes("Sarah", "Bada", c2);
+		System.out.println(client.tabcomptes[0].getSolde());
+		
+		//Exercice 4.4
+		compte10 = new Compte(10);
+		compte10.depot(1000);
+		clientmulti = new ClientMultiComptes("Cuvelier", "Mathias", compte10);
+		System.out.println("Le solde du client est de " + clientmulti.getSolde() + "euro");
+		compte20 = new Compte(20);
+		compte20.depot(2500);
+		clientmulti.ajouterCompte(compte20);
+		System.out.println("Le solde du client est de " + clientmulti.getSolde() + "euro");
 	}
 }
