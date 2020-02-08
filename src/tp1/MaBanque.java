@@ -18,9 +18,9 @@ public class MaBanque {
 		//Instanciation
 		
 		//Exercice2.3, afficher la situation du compte
-		compte1 = new Compte(1) ;
-		System.out.println("Le decouvert est de " + compte1.getDecouvert() + "euro") ;
-		compte1.setDecouvert(100) ;
+		compte1 = new Compte(1);
+		System.out.println("Le decouvert est de " + compte1.getDecouvert() + "euro");
+		compte1.setDecouvert(100);
 		System.out.println("Le nouveau decouvert est de " + compte1.getDecouvert() + "euro");
 		System.out.println("Le solde est de " + compte1.getSolde() + "euro");
 		//Exercice 2.4, effectuer un depot 
@@ -32,8 +32,8 @@ public class MaBanque {
 		compte1.afficherSolde();
 		
 		//Exerice 2.6, cycle complet
-		c2 = new Compte(2) ;
-		c2.depot(1000) ;
+		c2 = new Compte(2);
+		c2.depot(1000);
 		c2.afficherSolde();
 		c2.retrait(600); 
 		c2.afficherSolde();

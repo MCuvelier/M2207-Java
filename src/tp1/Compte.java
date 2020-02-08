@@ -2,13 +2,13 @@ package tp1;
 
 public class Compte {
 	//Attributs
-		private int numero ;
+		private int numero;
 		private double solde, decouvert;
 			
 		//Constructeurs
 		 public Compte(int numero) {
 			 this.numero = numero;
-			 solde = 0; 
+			 solde = 0;
 			 decouvert = 0;
 		 }
 		
@@ -27,12 +27,10 @@ public class Compte {
 		 
 		 public int getNumero() {
 			 return numero;
-			 
 		 }
 		 
 		 public double getSolde() {
 			 return solde;
-			 
 		 }
 		
 		//Methodes 
@@ -43,15 +41,26 @@ public class Compte {
 		 
 		 //Exercice 2.4
 		 public void depot(double montant) {
-			 solde = montant+solde ;
+			 solde = montant+solde;
 		 }
 		 //Exercice 2.5
 		 String retrait(double montant) {
 			 if((solde+decouvert) < montant) {
-				 return "Retrait refuse." ;
+				 return "Retrait refuse.";
 			 }else {
-				 solde= solde-montant ;
+				 solde= solde-montant;
 				 return "Retrait effectue.";
 			 }
+		 }
+		//Exercice 5
+		 public String virer(Compte destinataire, double montant) {
+			 if(montant<= solde+montant) {
+				 solde= solde -montant;
+				 destinataire.depot(montant);
+				 return " Virement effectue";
+			 }
+			 else {
+				 return" Virement refuse";
+			 } 
 		 }
 }
