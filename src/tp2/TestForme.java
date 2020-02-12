@@ -5,7 +5,11 @@ public class TestForme {
 		//Declaration
 		//Exercice 1.4
 		Forme f1,f2;
+
+		//Exercice 2.3
+		Cercle c1, c2, c3;
 		
+		//Instanciation
 		//Exercice 1.4
 		f1= new Forme();
 		f2 = new Forme("vert", false);
@@ -22,5 +26,28 @@ public class TestForme {
 		//Exercice 1.7
 		System.out.println(f1.seDecrire());
 		System.out.println(f2.seDecrire());
+		
+		//Exercice 2.3 et 2.5 après modification
+		c1 = new Cercle();
+		System.out.println(c1.seDecrire()); 
+		
+		//Exercice 2.7
+		c2 = new Cercle(2.5);
+		System.out.println(c2.seDecrire());
+		
+		/*Exercice 2.8
+		Sans super(x,x) dans le constructeur Cercle(double r,String couleur, boolean coloriage), l'objet prendra
+		les valeures par defauts donc "orange et true", definies dans Forme(). 
+		*/
+		
+		//Exercice 2.10
+		c3 = new Cercle(3.2,"jaune",false);
+		System.out.println(c3.seDecrire());
+	
+		//Exercice 2.11
+		System.out.println("L'aire du cercle c2 est  " + c2.calculerAire() + " cm²" );
+		System.out.println("Le perimetre de c2 est " + c2.calculerPerimetre() + " cm");
+		System.out.println("L'aire du cercle c3 est " + c3.calculerAire() +  " cm²");
+		System.out.println("Le perimetre du cercle c3 est " + c3.calculerPerimetre() + " cm");
 	}
 }
