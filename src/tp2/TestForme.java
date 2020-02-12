@@ -9,6 +9,9 @@ public class TestForme {
 		//Exercice 2.3
 		Cercle c1, c2, c3;
 		
+		//Exercice 3.2
+		Cylindre cy1, cy2;
+		
 		//Instanciation
 		//Exercice 1.4
 		f1= new Forme();
@@ -49,5 +52,18 @@ public class TestForme {
 		System.out.println("Le perimetre de c2 est " + c2.calculerPerimetre() + " cm");
 		System.out.println("L'aire du cercle c3 est " + c3.calculerAire() +  " cm²");
 		System.out.println("Le perimetre du cercle c3 est " + c3.calculerPerimetre() + " cm");
+	
+		//Exercice 3.2
+		cy1 = new Cylindre();
+		System.out.println(cy1.seDecrire());
+		
+		//Exercice 3.4
+		cy2 = new Cylindre(4.2,1.3,"bleu",true);
+		System.out.println(cy2.seDecrire());
+		
+		//Exercice 3.5
+		System.out.println("Le volume du cylindre 1 est de " + cy1.calculerVolume() + " cm^3 ");
+		System.out.println("Le volume du cylindre 2 est de " + cy2.calculerVolume() + " cm^3 ");
+				
 	}
 }
