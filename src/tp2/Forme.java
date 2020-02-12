@@ -5,17 +5,21 @@ public class Forme {
 	//Exercice1.1
 	private String couleur;
 	private boolean coloriage;
+	//exercice4
+	private static int nbFormes=0;
 	
 	//Constructeurs 
 	//Exercice 1.2
 	public Forme() {
 		couleur = "orange";
 		coloriage = true;
+		nbFormes++; //Exercice 4
 	}
 	
 	public Forme(String c, boolean r) {
 		couleur = c; 
 		coloriage = r;
+		nbFormes++; //Exercice 4
 	}
 	
 	//Accesseurs
@@ -40,5 +44,10 @@ public class Forme {
 	//Exercice 1.6
 	public String seDecrire() {
 		return " Une Forme de couleur " + couleur + " et de coloriage " + coloriage;
+	}
+	
+	//Exercice 4
+	public static int compteur() {
+		return nbFormes;
 	}
 }

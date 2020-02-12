@@ -15,18 +15,18 @@ public class Cylindre extends Cercle {
 	
 	//exercice 3.3
 	public Cylindre(double hauteur,double r, String couleur, boolean coloriage){
-		 super(r,couleur,coloriage);
-		 this.hauteur = hauteur; 
+		super(r,couleur,coloriage);
+		this.hauteur = hauteur; 
 	}
 	
 	//Accesseurs
 	//Exercice 3.1
 	public void setHauteur(double h) {
-		hauteur = h ;
+		hauteur = h;
 	}
 		
 	public double getHauteur() {
-			return hauteur;
+		return hauteur;
 	}
 	
 	//Methodes

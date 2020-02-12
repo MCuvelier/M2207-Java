@@ -27,7 +27,7 @@ public class Cercle extends Forme {
 	//Accesseurs
 	//Exercice 2.4
 	public void setRayon(double r) {
-		rayon = r ;
+		rayon = r;
 	}
 
 	public double getRayon() {
@@ -37,12 +37,12 @@ public class Cercle extends Forme {
 	//Methodes 
 	//Exercice 2.5
 	public String seDecrire() {
-		return " Un Cercle de rayon " + rayon + " cm " + super.seDecrire() ;
+		return " Un Cercle de rayon " + rayon + " cm " + super.seDecrire();
 	}
 	
 	//Exercice 2.11
 	public double calculerAire() {
-		return Math.PI *rayon *rayon ;
+		return Math.PI *rayon *rayon;
 	}
 	
 	public double calculerPerimetre() {

@@ -13,6 +13,10 @@ public class TestForme {
 		Cylindre cy1, cy2;
 		
 		//Instanciation
+		
+		//Exercice4
+		System.out.println("Le nombre de forme au debut est de " + Forme.compteur());
+		
 		//Exercice 1.4
 		f1= new Forme();
 		f2 = new Forme("vert", false);
@@ -64,6 +68,8 @@ public class TestForme {
 		//Exercice 3.5
 		System.out.println("Le volume du cylindre 1 est de " + cy1.calculerVolume() + " cm^3 ");
 		System.out.println("Le volume du cylindre 2 est de " + cy2.calculerVolume() + " cm^3 ");
-				
+		
+		//Exercice4
+		System.out.println("Le nombre de forme à la fin est de " + Forme.compteur());
 	}
 }
