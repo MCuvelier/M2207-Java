@@ -16,7 +16,7 @@ public class Humain {
 
 	//Methodes
 
-		//Exercice1.3
+	//Exercice1.3
 	public String quelEstTonNom() {
 		return nom;
 	}
