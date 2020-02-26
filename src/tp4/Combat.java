@@ -26,9 +26,9 @@ public class Combat {
 		if(pokemon1.getEnergie()==0 && pokemon2.getEnergie()==0) {
 			System.out.println("egalite en " + round);
 		} else if(pokemon2.getEnergie()==0 && pokemon1.getEnergie()>0) {
-			System.out.println(pokemon1.getNom() + " gagne le combat en " + round + " round ");
+			System.out.println(pokemon1.getNom() + " gagne  en " + round + " round ");
 		} else {
-			System.out.println(pokemon2.getNom() + " gagne le combat en " + round + " round ");
+			System.out.println(pokemon2.getNom() + " gagne en " + round + " round ");
 		}
 	}
 }
