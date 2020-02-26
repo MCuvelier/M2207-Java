@@ -4,7 +4,7 @@ public class TestPokemon {
 	public static void main(String[] args) {
 
 		//Declaration
-		Pokemon pokemon1, pokemon2;
+		Pokemon pokemon1, pokemon2, pokemon3;
 
 
 		//Instanciation
@@ -31,5 +31,20 @@ public class TestPokemon {
 		pokemon2 = new Pokemon("Zaworldo");
 		pokemon2.sePresenter();
 		pokemon2.compterCycles();
+		
+		//test exercice 2.2
+		System.out.println("");
+		System.out.println("-Test exercice 2.2 sur un nouveau pokemon ( pokemon3)- ");
+		pokemon3 = new Pokemon("Giratin");
+		pokemon3.sePresenter();
+		pokemon3.perdreEnergie(3);
+		
+
+		
+		//test exercice 2.3
+		System.out.println("");
+		pokemon1.sePresenter();
+		pokemon3.attaquer(pokemon1); 
+		pokemon1.sePresenter();
 	}
 }
