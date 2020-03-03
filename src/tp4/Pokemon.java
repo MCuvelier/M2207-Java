@@ -77,6 +77,9 @@ public class Pokemon {
 	//Exercice 2.2
 	public void perdreEnergie(int perte) {
 		energie = energie - perte;
+		if (energie<= maxEnergie*(1/4)) { // exercice 4.2 prendre plus de dammages
+			perte = perte*(3/2);
+		}
 		if (energie<0) { //boucle if pour ne pas avoir d'energie negative
 			energie = 0;
 		}
@@ -85,9 +88,14 @@ public class Pokemon {
 	//EXercice 2.3
 	public void attaquer(Pokemon adversaire) {
 		adversaire.perdreEnergie(puissance);
+		if (energie<= maxEnergie*(1/4)) { //execercice 4.1 double la puissance
+			puissance = puissance*2;
+			System.out.println(this.getNom() +" est en furie");
+		}
 		if (energie<0) { //boucle if pour ne pas avoir d'energie negative
 			energie = 0;
 		}
 		System.out.println(this.getNom() + " attaque " + adversaire.getNom());
+		puissance = puissance + (int)(Math.random() *((1-0) +1));
 	}
 }

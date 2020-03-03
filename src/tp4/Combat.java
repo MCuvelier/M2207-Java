@@ -20,7 +20,7 @@ public class Combat {
 			pokemon1.attaquer(pokemon2);
 			pokemon2.attaquer(pokemon1);
 			round++;
-			System.out.println("Round "+ round + " "+ pokemon1.getNom() +" : "+ pokemon1.getEnergie() +" || " + pokemon2.getNom() +" : " + pokemon2.getEnergie());
+			System.out.println("Round "+ round + " "+ pokemon1.getNom() +" : (en)"+ pokemon1.getEnergie() +" (atk) " + pokemon1.getPuissance() +" || " + pokemon2.getNom() +" : (en)" + pokemon2.getEnergie() + " (atk) " +pokemon2.getPuissance());
 		}
 		//condition d'égalite, de victoire et de défaite selon le nombre de point d'énergie restant
 		if(pokemon1.getEnergie()==0 && pokemon2.getEnergie()==0) {
